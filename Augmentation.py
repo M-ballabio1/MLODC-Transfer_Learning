@@ -13,18 +13,6 @@ import​ ​sys
 ​from​ ​glob​ ​import​ ​glob 
 import​ ​cv2 
   
-  
-## Define control variables and parse user inputs 
-​parser​ ​=​ ​argparse​.​ArgumentParser​() 
-​parser​.​add_argument​(​'--imgdir'​, ​help​=​'Folder containing images to augment'​, 
- ​                    ​required​=​True​) 
-​parser​.​add_argument​(​'--imgext'​, ​help​=​'File extension of images (for example, .JPG)'​, 
- ​                    ​default​=​'.JPG'​) 
-​parser​.​add_argument​(​'--numaugs'​, ​help​=​'Number of augmented images to create from each original image'​, 
- ​                    ​default​=​5​) 
-​parser​.​add_argument​(​'--debug'​, ​help​=​'Displays every augmented image when enabled'​, 
- ​                    ​default​=​False​) 
-  
 ​args​ ​=​ ​parser​.​parse_args​() 
 ​IMG_DIR​ ​=​ ​args​.​imgdir 
 if​ ​not​ ​os​.​path​.​isdir​(​IMG_DIR​): 
@@ -36,8 +24,7 @@ if​ ​not​ ​os​.​path​.​isdir​(​IMG_DIR​):
 cwd​ ​=​ ​os​.​getcwd​() 
   
 ​#### Define augmentation sequence #### 
-​# This can be tweaked to create a huge variety of image augmentations. 
-​# See https://github.com/aleju/imgaug for a list of augmentation techniques available. 
+​# This can be tweaked to create a huge variety of image augmentations.
 ​seq1​ ​=​ ​iaa​.​Sequential​([ 
  ​    ​iaa​.​Fliplr​(​0.5​),                             ​# Horizontal flip 50% of images 
  ​    ​iaa​.​Crop​(​percent​=​(​0​, ​0.10​)),                 ​# Crop all images between 0% to 10% 
