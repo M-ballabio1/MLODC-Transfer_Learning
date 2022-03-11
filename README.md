@@ -12,9 +12,15 @@ Annotations were labeled by trained human readers with quality control managemen
 - Age related Macular Degeneration (A),
 - Pathological Myopia (M),
 
+![download](https://user-images.githubusercontent.com/78934727/157920405-6d46d414-7c52-471b-93dd-5d7105a174e5.png)
+
+
 ## Prerequisites
+
 -Google Colab
+
 -Keras
+
 -some basic packages
 
 ## Model
@@ -33,6 +39,9 @@ In my case, I reuse and adapt the famous convolutional neural di netework VGG16.
 
 The results of the multi-label classification are:
 
-- TRAINING ACCURACY: 0,83
+- TRAINING ACCURACY: 84,38%
 
-- VALIDATION ACCURACY: 0,79
+- VALIDATION ACCURACY: 78,16%
+
+![acc](https://user-images.githubusercontent.com/78934727/157920309-b6b24684-d276-432e-baac-2d61d61da857.png)
+![loss](https://user-images.githubusercontent.com/78934727/157920334-ecfb4e38-7ff2-4cac-aa80-acacac60dc27.png)
