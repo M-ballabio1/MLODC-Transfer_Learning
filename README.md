@@ -21,7 +21,7 @@ Annotations were labeled by trained human readers with quality control managemen
 
 -Keras
 
--some basic packages
+-some basic packages as numpy, pandas, matplotlib
 
 ## Model
 Transfer learning is a machine learning method where a model developed for a task is reused as the starting point for a model on a second task.
