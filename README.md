@@ -18,10 +18,8 @@ Annotations were labeled by trained human readers with quality control managemen
 ## Prerequisites
 
 -Google Colab
-
 -Keras
-
--some basic packages as numpy, pandas, matplotlib
+-Basic python libraries as Numpy, Pandas, Matplotlib, Cv2, Pillow
 
 ## Model
 Transfer learning is a machine learning method where a model developed for a task is reused as the starting point for a model on a second task.
